@@ -15,8 +15,8 @@ def ReadS3OrdersData(): #-> DataFrame:
 
     s3 = boto3.client('s3',
                       region_name="ap-northeast-2",
-                      aws_access_key_id="AKIA2EHO5GXPEW2W5S37",
-                      aws_secret_access_key="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",)
+                      aws_access_key_id="****************",
+                      aws_secret_access_key="****************",)
     bucket = 'wingeatdata'
     obj = s3.get_object(Bucket=bucket, Key= f"practice/{year}-{month}-{day}-{hour}.csv")
     df = pd.read_csv(io.BytesIO(obj["Body"].read()))
