@@ -1,0 +1,626 @@
+[2023-09-11T05:40:53.854+0000] {processor.py:157} INFO - Started process (PID=1045) to work on /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:40:53.855+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/OrdersRetention.py for tasks to queue
+[2023-09-11T05:40:53.856+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:40:53.856+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:40:56.331+0000] {logging_mixin.py:151} WARNING - /home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/table.py:2155 UserWarning: A progress bar was requested, but there was an error loading the tqdm library. Please install tqdm to use the progress bar functionality.
+[2023-09-11T05:40:57.773+0000] {logging_mixin.py:151} INFO - 2023-09-06 05:39:12.215000
+[2023-09-11T05:40:57.773+0000] {logging_mixin.py:151} INFO - Read
+[2023-09-11T05:40:57.999+0000] {logging_mixin.py:151} INFO -                           _id               createdAt  ...   state realPaidPrice
+3    64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+35   64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+38   64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+48   64f7e3a97afc67375aad4458 2023-09-06 02:27:54.436  ...  ACTIVE          4058
+49   64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+50   64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+62   64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+73   64f94467e5c5c448562a2f3f 2023-09-07 03:32:56.550  ...  ACTIVE           700
+74   64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+75   64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+76   64f967a5b58dcf6a2c167cff 2023-09-07 06:03:17.900  ...  ACTIVE          2000
+92   64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+117  64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+149  64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+152  64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+163  64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+164  64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+176  64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+188  64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+189  64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+206  64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+
+[21 rows x 5 columns]
+[2023-09-11T05:40:57.999+0000] {logging_mixin.py:151} INFO - MONGO
+[2023-09-11T05:40:58.001+0000] {logging_mixin.py:151} INFO - ['/home/airflow/.local/bin', '/usr/local/lib/python38.zip', '/usr/local/lib/python3.8', '/usr/local/lib/python3.8/lib-dynload', '/home/airflow/.local/lib/python3.8/site-packages', '/usr/local/lib/python3.8/site-packages', '/opt/airflow/dags', '/opt/airflow/config', '/opt/airflow/plugins', '/plugins/read']
+[2023-09-11T05:40:58.005+0000] {logging_mixin.py:151} INFO - <Task(PythonOperator): S3write>
+[2023-09-11T05:40:58.005+0000] {logging_mixin.py:151} INFO - <Task(PythonOperator): s3Read>
+[2023-09-11T05:40:58.008+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test01']) retrieved from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:40:58.075+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:40:58.074+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-09-11T05:40:58.088+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:40:58.088+0000] {dag.py:3677} INFO - Setting next_dagrun for test01 to 2023-09-10T14:55:00+00:00, run_after=2023-09-11T14:55:00+00:00
+[2023-09-11T05:40:58.099+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/OrdersRetention.py took 4.246 seconds
+[2023-09-11T05:41:28.216+0000] {processor.py:157} INFO - Started process (PID=1057) to work on /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:41:28.217+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/OrdersRetention.py for tasks to queue
+[2023-09-11T05:41:28.218+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:41:28.217+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:41:30.333+0000] {logging_mixin.py:151} WARNING - /home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/table.py:2155 UserWarning: A progress bar was requested, but there was an error loading the tqdm library. Please install tqdm to use the progress bar functionality.
+[2023-09-11T05:41:30.998+0000] {logging_mixin.py:151} INFO - 2023-09-06 05:39:12.215000
+[2023-09-11T05:41:30.998+0000] {logging_mixin.py:151} INFO - Read
+[2023-09-11T05:41:31.192+0000] {logging_mixin.py:151} INFO -                           _id               createdAt  ...   state realPaidPrice
+3    64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+35   64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+38   64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+48   64f7e3a97afc67375aad4458 2023-09-06 02:27:54.436  ...  ACTIVE          4058
+49   64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+50   64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+62   64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+73   64f94467e5c5c448562a2f3f 2023-09-07 03:32:56.550  ...  ACTIVE           700
+74   64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+75   64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+76   64f967a5b58dcf6a2c167cff 2023-09-07 06:03:17.900  ...  ACTIVE          2000
+92   64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+117  64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+149  64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+152  64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+163  64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+164  64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+176  64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+188  64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+189  64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+206  64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+
+[21 rows x 5 columns]
+[2023-09-11T05:41:31.193+0000] {logging_mixin.py:151} INFO - MONGO
+[2023-09-11T05:41:31.195+0000] {logging_mixin.py:151} INFO - ['/home/airflow/.local/bin', '/usr/local/lib/python38.zip', '/usr/local/lib/python3.8', '/usr/local/lib/python3.8/lib-dynload', '/home/airflow/.local/lib/python3.8/site-packages', '/usr/local/lib/python3.8/site-packages', '/opt/airflow/dags', '/opt/airflow/config', '/opt/airflow/plugins', '/plugins/read']
+[2023-09-11T05:41:31.202+0000] {logging_mixin.py:151} INFO - <Task(PythonOperator): S3write>
+[2023-09-11T05:41:31.202+0000] {logging_mixin.py:151} INFO - <Task(PythonOperator): s3Read>
+[2023-09-11T05:41:31.207+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test01']) retrieved from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:41:31.232+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:41:31.231+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-09-11T05:41:31.250+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:41:31.250+0000] {dag.py:3677} INFO - Setting next_dagrun for test01 to 2023-09-10T14:55:00+00:00, run_after=2023-09-11T14:55:00+00:00
+[2023-09-11T05:41:31.260+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/OrdersRetention.py took 3.047 seconds
+[2023-09-11T05:42:01.551+0000] {processor.py:157} INFO - Started process (PID=1069) to work on /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:42:01.552+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/OrdersRetention.py for tasks to queue
+[2023-09-11T05:42:01.553+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:42:01.553+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:42:03.614+0000] {logging_mixin.py:151} WARNING - /home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/table.py:2155 UserWarning: A progress bar was requested, but there was an error loading the tqdm library. Please install tqdm to use the progress bar functionality.
+[2023-09-11T05:42:04.123+0000] {logging_mixin.py:151} INFO - 2023-09-06 05:39:12.215000
+[2023-09-11T05:42:04.123+0000] {logging_mixin.py:151} INFO - Read
+[2023-09-11T05:42:04.342+0000] {logging_mixin.py:151} INFO -                           _id               createdAt  ...   state realPaidPrice
+3    64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+35   64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+38   64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+48   64f7e3a97afc67375aad4458 2023-09-06 02:27:54.436  ...  ACTIVE          4058
+49   64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+50   64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+62   64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+73   64f94467e5c5c448562a2f3f 2023-09-07 03:32:56.550  ...  ACTIVE           700
+74   64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+75   64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+76   64f967a5b58dcf6a2c167cff 2023-09-07 06:03:17.900  ...  ACTIVE          2000
+92   64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+117  64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+149  64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+152  64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+163  64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+164  64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+176  64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+188  64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+189  64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+206  64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+
+[21 rows x 5 columns]
+[2023-09-11T05:42:04.343+0000] {logging_mixin.py:151} INFO - MONGO
+[2023-09-11T05:42:04.349+0000] {logging_mixin.py:151} INFO - ['/home/airflow/.local/bin', '/usr/local/lib/python38.zip', '/usr/local/lib/python3.8', '/usr/local/lib/python3.8/lib-dynload', '/home/airflow/.local/lib/python3.8/site-packages', '/usr/local/lib/python3.8/site-packages', '/opt/airflow/dags', '/opt/airflow/config', '/opt/airflow/plugins', '/plugins/read']
+[2023-09-11T05:42:04.355+0000] {logging_mixin.py:151} INFO - <Task(PythonOperator): S3write>
+[2023-09-11T05:42:04.355+0000] {logging_mixin.py:151} INFO - <Task(PythonOperator): s3Read>
+[2023-09-11T05:42:04.359+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test01']) retrieved from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:42:04.382+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:42:04.382+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-09-11T05:42:04.396+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:42:04.395+0000] {dag.py:3677} INFO - Setting next_dagrun for test01 to 2023-09-10T14:55:00+00:00, run_after=2023-09-11T14:55:00+00:00
+[2023-09-11T05:42:04.405+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/OrdersRetention.py took 2.857 seconds
+[2023-09-11T05:42:34.743+0000] {processor.py:157} INFO - Started process (PID=1081) to work on /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:42:34.745+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/OrdersRetention.py for tasks to queue
+[2023-09-11T05:42:34.746+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:42:34.745+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:42:37.085+0000] {logging_mixin.py:151} WARNING - /home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/table.py:2155 UserWarning: A progress bar was requested, but there was an error loading the tqdm library. Please install tqdm to use the progress bar functionality.
+[2023-09-11T05:42:39.861+0000] {logging_mixin.py:151} INFO - 2023-09-06 05:39:12.215000
+[2023-09-11T05:42:39.862+0000] {logging_mixin.py:151} INFO - Read
+[2023-09-11T05:42:40.040+0000] {logging_mixin.py:151} INFO -                           _id               createdAt  ...   state realPaidPrice
+3    64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+35   64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+38   64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+48   64f7e3a97afc67375aad4458 2023-09-06 02:27:54.436  ...  ACTIVE          4058
+49   64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+50   64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+62   64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+73   64f94467e5c5c448562a2f3f 2023-09-07 03:32:56.550  ...  ACTIVE           700
+74   64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+75   64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+76   64f967a5b58dcf6a2c167cff 2023-09-07 06:03:17.900  ...  ACTIVE          2000
+92   64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+117  64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+149  64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+152  64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+163  64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+164  64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+176  64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+188  64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+189  64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+206  64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+
+[21 rows x 5 columns]
+[2023-09-11T05:42:40.040+0000] {logging_mixin.py:151} INFO - MONGO
+[2023-09-11T05:42:40.044+0000] {logging_mixin.py:151} INFO - ['/home/airflow/.local/bin', '/usr/local/lib/python38.zip', '/usr/local/lib/python3.8', '/usr/local/lib/python3.8/lib-dynload', '/home/airflow/.local/lib/python3.8/site-packages', '/usr/local/lib/python3.8/site-packages', '/opt/airflow/dags', '/opt/airflow/config', '/opt/airflow/plugins', '/plugins/read']
+[2023-09-11T05:42:40.047+0000] {logging_mixin.py:151} INFO - <Task(PythonOperator): S3write>
+[2023-09-11T05:42:40.047+0000] {logging_mixin.py:151} INFO - <Task(PythonOperator): s3Read>
+[2023-09-11T05:42:40.049+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test01']) retrieved from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:42:40.067+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:42:40.066+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-09-11T05:42:40.081+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:42:40.081+0000] {dag.py:3677} INFO - Setting next_dagrun for test01 to 2023-09-10T14:55:00+00:00, run_after=2023-09-11T14:55:00+00:00
+[2023-09-11T05:42:40.091+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/OrdersRetention.py took 5.352 seconds
+[2023-09-11T05:43:10.166+0000] {processor.py:157} INFO - Started process (PID=1093) to work on /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:43:10.166+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/OrdersRetention.py for tasks to queue
+[2023-09-11T05:43:10.167+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:43:10.167+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:43:12.208+0000] {logging_mixin.py:151} WARNING - /home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/table.py:2155 UserWarning: A progress bar was requested, but there was an error loading the tqdm library. Please install tqdm to use the progress bar functionality.
+[2023-09-11T05:43:12.667+0000] {logging_mixin.py:151} INFO - 2023-09-06 05:39:12.215000
+[2023-09-11T05:43:12.667+0000] {logging_mixin.py:151} INFO - Read
+[2023-09-11T05:43:12.940+0000] {logging_mixin.py:151} INFO -                           _id               createdAt  ...   state realPaidPrice
+3    64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+35   64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+38   64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+48   64f7e3a97afc67375aad4458 2023-09-06 02:27:54.436  ...  ACTIVE          4058
+49   64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+50   64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+62   64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+73   64f94467e5c5c448562a2f3f 2023-09-07 03:32:56.550  ...  ACTIVE           700
+74   64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+75   64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+76   64f967a5b58dcf6a2c167cff 2023-09-07 06:03:17.900  ...  ACTIVE          2000
+92   64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+117  64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+149  64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+152  64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+163  64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+164  64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+176  64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+188  64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+189  64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+206  64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+
+[21 rows x 5 columns]
+[2023-09-11T05:43:12.940+0000] {logging_mixin.py:151} INFO - MONGO
+[2023-09-11T05:43:12.942+0000] {logging_mixin.py:151} INFO - ['/home/airflow/.local/bin', '/usr/local/lib/python38.zip', '/usr/local/lib/python3.8', '/usr/local/lib/python3.8/lib-dynload', '/home/airflow/.local/lib/python3.8/site-packages', '/usr/local/lib/python3.8/site-packages', '/opt/airflow/dags', '/opt/airflow/config', '/opt/airflow/plugins', '/plugins/read']
+[2023-09-11T05:43:12.946+0000] {logging_mixin.py:151} INFO - <Task(PythonOperator): S3write>
+[2023-09-11T05:43:12.947+0000] {logging_mixin.py:151} INFO - <Task(PythonOperator): s3Read>
+[2023-09-11T05:43:12.950+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test01']) retrieved from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:43:12.968+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:43:12.968+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-09-11T05:43:12.982+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:43:12.982+0000] {dag.py:3677} INFO - Setting next_dagrun for test01 to 2023-09-10T14:55:00+00:00, run_after=2023-09-11T14:55:00+00:00
+[2023-09-11T05:43:12.995+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/OrdersRetention.py took 2.831 seconds
+[2023-09-11T05:43:33.445+0000] {processor.py:157} INFO - Started process (PID=1105) to work on /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:43:33.445+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/OrdersRetention.py for tasks to queue
+[2023-09-11T05:43:33.446+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:43:33.446+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:43:35.561+0000] {logging_mixin.py:151} WARNING - /home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/table.py:2155 UserWarning: A progress bar was requested, but there was an error loading the tqdm library. Please install tqdm to use the progress bar functionality.
+[2023-09-11T05:43:36.094+0000] {logging_mixin.py:151} INFO - 2023-09-06 05:39:12.215000
+[2023-09-11T05:43:36.096+0000] {logging_mixin.py:151} INFO - Read
+[2023-09-11T05:43:36.292+0000] {logging_mixin.py:151} INFO -                           _id               createdAt  ...   state realPaidPrice
+3    64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+35   64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+38   64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+48   64f7e3a97afc67375aad4458 2023-09-06 02:27:54.436  ...  ACTIVE          4058
+49   64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+50   64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+62   64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+73   64f94467e5c5c448562a2f3f 2023-09-07 03:32:56.550  ...  ACTIVE           700
+74   64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+75   64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+76   64f967a5b58dcf6a2c167cff 2023-09-07 06:03:17.900  ...  ACTIVE          2000
+92   64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+117  64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+149  64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+152  64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+163  64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+164  64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+176  64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+188  64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+189  64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+206  64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+
+[21 rows x 5 columns]
+[2023-09-11T05:43:36.292+0000] {logging_mixin.py:151} INFO - MONGO
+[2023-09-11T05:43:36.294+0000] {logging_mixin.py:151} INFO - ['/home/airflow/.local/bin', '/usr/local/lib/python38.zip', '/usr/local/lib/python3.8', '/usr/local/lib/python3.8/lib-dynload', '/home/airflow/.local/lib/python3.8/site-packages', '/usr/local/lib/python3.8/site-packages', '/opt/airflow/dags', '/opt/airflow/config', '/opt/airflow/plugins', '/plugins/read']
+[2023-09-11T05:43:36.300+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test01']) retrieved from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:43:36.318+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:43:36.318+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-09-11T05:43:36.333+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:43:36.333+0000] {dag.py:3677} INFO - Setting next_dagrun for test01 to 2023-09-10T14:55:00+00:00, run_after=2023-09-11T14:55:00+00:00
+[2023-09-11T05:43:36.344+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/OrdersRetention.py took 2.902 seconds
+[2023-09-11T05:44:06.539+0000] {processor.py:157} INFO - Started process (PID=1118) to work on /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:44:06.540+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/OrdersRetention.py for tasks to queue
+[2023-09-11T05:44:06.540+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:44:06.540+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:44:08.670+0000] {logging_mixin.py:151} WARNING - /home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/table.py:2155 UserWarning: A progress bar was requested, but there was an error loading the tqdm library. Please install tqdm to use the progress bar functionality.
+[2023-09-11T05:44:09.355+0000] {logging_mixin.py:151} INFO - 2023-09-06 05:39:12.215000
+[2023-09-11T05:44:09.356+0000] {logging_mixin.py:151} INFO - Read
+[2023-09-11T05:44:09.482+0000] {logging_mixin.py:151} INFO -                           _id               createdAt  ...   state realPaidPrice
+3    64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+35   64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+38   64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+48   64f7e3a97afc67375aad4458 2023-09-06 02:27:54.436  ...  ACTIVE          4058
+49   64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+50   64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+62   64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+73   64f94467e5c5c448562a2f3f 2023-09-07 03:32:56.550  ...  ACTIVE           700
+74   64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+75   64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+76   64f967a5b58dcf6a2c167cff 2023-09-07 06:03:17.900  ...  ACTIVE          2000
+92   64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+117  64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+149  64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+152  64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+163  64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+164  64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+176  64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+188  64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+189  64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+206  64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+
+[21 rows x 5 columns]
+[2023-09-11T05:44:09.482+0000] {logging_mixin.py:151} INFO - MONGO
+[2023-09-11T05:44:09.484+0000] {logging_mixin.py:151} INFO - ['/home/airflow/.local/bin', '/usr/local/lib/python38.zip', '/usr/local/lib/python3.8', '/usr/local/lib/python3.8/lib-dynload', '/home/airflow/.local/lib/python3.8/site-packages', '/usr/local/lib/python3.8/site-packages', '/opt/airflow/dags', '/opt/airflow/config', '/opt/airflow/plugins', '/plugins/read']
+[2023-09-11T05:44:09.489+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test01']) retrieved from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:44:09.506+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:44:09.505+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-09-11T05:44:09.521+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:44:09.521+0000] {dag.py:3677} INFO - Setting next_dagrun for test01 to 2023-09-10T14:55:00+00:00, run_after=2023-09-11T14:55:00+00:00
+[2023-09-11T05:44:09.531+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/OrdersRetention.py took 2.994 seconds
+[2023-09-11T05:44:39.828+0000] {processor.py:157} INFO - Started process (PID=1130) to work on /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:44:39.829+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/OrdersRetention.py for tasks to queue
+[2023-09-11T05:44:39.830+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:44:39.830+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:44:41.808+0000] {logging_mixin.py:151} WARNING - /home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/table.py:2155 UserWarning: A progress bar was requested, but there was an error loading the tqdm library. Please install tqdm to use the progress bar functionality.
+[2023-09-11T05:44:42.437+0000] {logging_mixin.py:151} INFO - 2023-09-06 05:39:12.215000
+[2023-09-11T05:44:42.438+0000] {logging_mixin.py:151} INFO - Read
+[2023-09-11T05:44:42.581+0000] {logging_mixin.py:151} INFO -                           _id               createdAt  ...   state realPaidPrice
+3    64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+35   64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+38   64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+48   64f7e3a97afc67375aad4458 2023-09-06 02:27:54.436  ...  ACTIVE          4058
+49   64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+50   64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+62   64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+73   64f94467e5c5c448562a2f3f 2023-09-07 03:32:56.550  ...  ACTIVE           700
+74   64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+75   64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+76   64f967a5b58dcf6a2c167cff 2023-09-07 06:03:17.900  ...  ACTIVE          2000
+92   64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+117  64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+149  64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+152  64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+163  64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+164  64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+176  64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+188  64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+189  64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+206  64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+
+[21 rows x 5 columns]
+[2023-09-11T05:44:42.581+0000] {logging_mixin.py:151} INFO - MONGO
+[2023-09-11T05:44:42.583+0000] {logging_mixin.py:151} INFO - ['/home/airflow/.local/bin', '/usr/local/lib/python38.zip', '/usr/local/lib/python3.8', '/usr/local/lib/python3.8/lib-dynload', '/home/airflow/.local/lib/python3.8/site-packages', '/usr/local/lib/python3.8/site-packages', '/opt/airflow/dags', '/opt/airflow/config', '/opt/airflow/plugins', '/plugins/read']
+[2023-09-11T05:44:42.588+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test01']) retrieved from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:44:42.609+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:44:42.609+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-09-11T05:44:42.623+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:44:42.622+0000] {dag.py:3677} INFO - Setting next_dagrun for test01 to 2023-09-10T14:55:00+00:00, run_after=2023-09-11T14:55:00+00:00
+[2023-09-11T05:44:42.632+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/OrdersRetention.py took 2.806 seconds
+[2023-09-11T05:45:12.906+0000] {processor.py:157} INFO - Started process (PID=1142) to work on /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:45:12.907+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/OrdersRetention.py for tasks to queue
+[2023-09-11T05:45:12.907+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:45:12.907+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:45:15.061+0000] {logging_mixin.py:151} WARNING - /home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/table.py:2155 UserWarning: A progress bar was requested, but there was an error loading the tqdm library. Please install tqdm to use the progress bar functionality.
+[2023-09-11T05:45:15.981+0000] {logging_mixin.py:151} INFO - 2023-09-06 05:39:12.215000
+[2023-09-11T05:45:15.981+0000] {logging_mixin.py:151} INFO - Read
+[2023-09-11T05:45:16.188+0000] {logging_mixin.py:151} INFO -                           _id               createdAt  ...   state realPaidPrice
+3    64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+35   64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+38   64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+48   64f7e3a97afc67375aad4458 2023-09-06 02:27:54.436  ...  ACTIVE          4058
+49   64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+50   64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+62   64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+73   64f94467e5c5c448562a2f3f 2023-09-07 03:32:56.550  ...  ACTIVE           700
+74   64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+75   64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+76   64f967a5b58dcf6a2c167cff 2023-09-07 06:03:17.900  ...  ACTIVE          2000
+92   64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+117  64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+149  64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+152  64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+163  64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+164  64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+176  64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+188  64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+189  64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+206  64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+
+[21 rows x 5 columns]
+[2023-09-11T05:45:16.188+0000] {logging_mixin.py:151} INFO - MONGO
+[2023-09-11T05:45:16.190+0000] {logging_mixin.py:151} INFO - ['/home/airflow/.local/bin', '/usr/local/lib/python38.zip', '/usr/local/lib/python3.8', '/usr/local/lib/python3.8/lib-dynload', '/home/airflow/.local/lib/python3.8/site-packages', '/usr/local/lib/python3.8/site-packages', '/opt/airflow/dags', '/opt/airflow/config', '/opt/airflow/plugins', '/plugins/read']
+[2023-09-11T05:45:16.195+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test01']) retrieved from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:45:16.216+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:45:16.216+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-09-11T05:45:16.229+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:45:16.229+0000] {dag.py:3677} INFO - Setting next_dagrun for test01 to 2023-09-10T14:55:00+00:00, run_after=2023-09-11T14:55:00+00:00
+[2023-09-11T05:45:16.238+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/OrdersRetention.py took 3.335 seconds
+[2023-09-11T05:45:46.456+0000] {processor.py:157} INFO - Started process (PID=1160) to work on /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:45:46.457+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/OrdersRetention.py for tasks to queue
+[2023-09-11T05:45:46.458+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:45:46.458+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:45:48.883+0000] {logging_mixin.py:151} WARNING - /home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/table.py:2155 UserWarning: A progress bar was requested, but there was an error loading the tqdm library. Please install tqdm to use the progress bar functionality.
+[2023-09-11T05:45:57.004+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:45:57.003+0000] {gbq.py:356} INFO - Total time taken 10.54 s.
+Finished at 2023-09-11 05:45:57.
+[2023-09-11T05:45:57.005+0000] {logging_mixin.py:151} INFO - 2023-09-06 05:39:12.215000
+[2023-09-11T05:45:57.005+0000] {logging_mixin.py:151} INFO - Read
+[2023-09-11T05:45:57.127+0000] {logging_mixin.py:151} INFO -                           _id               createdAt  ...   state realPaidPrice
+3    64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+35   64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+38   64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+48   64f7e3a97afc67375aad4458 2023-09-06 02:27:54.436  ...  ACTIVE          4058
+49   64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+50   64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+62   64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+73   64f94467e5c5c448562a2f3f 2023-09-07 03:32:56.550  ...  ACTIVE           700
+74   64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+75   64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+76   64f967a5b58dcf6a2c167cff 2023-09-07 06:03:17.900  ...  ACTIVE          2000
+92   64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+117  64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+149  64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+152  64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+163  64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+164  64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+176  64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+188  64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+189  64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+206  64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+
+[21 rows x 5 columns]
+[2023-09-11T05:45:57.128+0000] {logging_mixin.py:151} INFO - MONGO
+[2023-09-11T05:45:57.130+0000] {logging_mixin.py:151} INFO - ['/home/airflow/.local/bin', '/usr/local/lib/python38.zip', '/usr/local/lib/python3.8', '/usr/local/lib/python3.8/lib-dynload', '/home/airflow/.local/lib/python3.8/site-packages', '/usr/local/lib/python3.8/site-packages', '/opt/airflow/dags', '/opt/airflow/config', '/opt/airflow/plugins', '/plugins/read']
+[2023-09-11T05:45:57.135+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test01']) retrieved from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:45:57.150+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:45:57.150+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-09-11T05:45:57.164+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:45:57.164+0000] {dag.py:3677} INFO - Setting next_dagrun for test01 to 2023-09-10T14:55:00+00:00, run_after=2023-09-11T14:55:00+00:00
+[2023-09-11T05:45:57.174+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/OrdersRetention.py took 10.722 seconds
+[2023-09-11T05:46:27.480+0000] {processor.py:157} INFO - Started process (PID=1172) to work on /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:46:27.480+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/OrdersRetention.py for tasks to queue
+[2023-09-11T05:46:27.481+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:46:27.481+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:46:29.643+0000] {logging_mixin.py:151} WARNING - /home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/table.py:2155 UserWarning: A progress bar was requested, but there was an error loading the tqdm library. Please install tqdm to use the progress bar functionality.
+[2023-09-11T05:46:30.164+0000] {logging_mixin.py:151} INFO - 2023-09-06 05:39:12.215000
+[2023-09-11T05:46:30.164+0000] {logging_mixin.py:151} INFO - Read
+[2023-09-11T05:46:30.277+0000] {logging_mixin.py:151} INFO -                           _id               createdAt  ...   state realPaidPrice
+3    64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+35   64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+38   64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+48   64f7e3a97afc67375aad4458 2023-09-06 02:27:54.436  ...  ACTIVE          4058
+49   64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+50   64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+62   64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+73   64f94467e5c5c448562a2f3f 2023-09-07 03:32:56.550  ...  ACTIVE           700
+74   64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+75   64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+76   64f967a5b58dcf6a2c167cff 2023-09-07 06:03:17.900  ...  ACTIVE          2000
+92   64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+117  64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+149  64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+152  64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+163  64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+164  64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+176  64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+188  64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+189  64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+206  64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+
+[21 rows x 5 columns]
+[2023-09-11T05:46:30.278+0000] {logging_mixin.py:151} INFO - MONGO
+[2023-09-11T05:46:30.280+0000] {logging_mixin.py:151} INFO - ['/home/airflow/.local/bin', '/usr/local/lib/python38.zip', '/usr/local/lib/python3.8', '/usr/local/lib/python3.8/lib-dynload', '/home/airflow/.local/lib/python3.8/site-packages', '/usr/local/lib/python3.8/site-packages', '/opt/airflow/dags', '/opt/airflow/config', '/opt/airflow/plugins', '/plugins/read']
+[2023-09-11T05:46:30.285+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test01']) retrieved from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:46:30.301+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:46:30.301+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-09-11T05:46:30.318+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:46:30.318+0000] {dag.py:3677} INFO - Setting next_dagrun for test01 to 2023-09-10T14:55:00+00:00, run_after=2023-09-11T14:55:00+00:00
+[2023-09-11T05:46:30.328+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/OrdersRetention.py took 2.852 seconds
+[2023-09-11T05:47:00.669+0000] {processor.py:157} INFO - Started process (PID=1184) to work on /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:47:00.670+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/OrdersRetention.py for tasks to queue
+[2023-09-11T05:47:00.672+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:47:00.671+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:47:02.998+0000] {logging_mixin.py:151} WARNING - /home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/table.py:2155 UserWarning: A progress bar was requested, but there was an error loading the tqdm library. Please install tqdm to use the progress bar functionality.
+[2023-09-11T05:47:04.292+0000] {logging_mixin.py:151} INFO - 2023-09-06 05:39:12.215000
+[2023-09-11T05:47:04.292+0000] {logging_mixin.py:151} INFO - Read
+[2023-09-11T05:47:04.414+0000] {logging_mixin.py:151} INFO -                           _id               createdAt  ...   state realPaidPrice
+3    64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+35   64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+38   64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+48   64f7e3a97afc67375aad4458 2023-09-06 02:27:54.436  ...  ACTIVE          4058
+49   64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+50   64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+62   64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+73   64f94467e5c5c448562a2f3f 2023-09-07 03:32:56.550  ...  ACTIVE           700
+74   64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+75   64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+76   64f967a5b58dcf6a2c167cff 2023-09-07 06:03:17.900  ...  ACTIVE          2000
+92   64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+117  64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+149  64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+152  64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+163  64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+164  64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+176  64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+188  64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+189  64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+206  64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+
+[21 rows x 5 columns]
+[2023-09-11T05:47:04.415+0000] {logging_mixin.py:151} INFO - MONGO
+[2023-09-11T05:47:04.416+0000] {logging_mixin.py:151} INFO - ['/home/airflow/.local/bin', '/usr/local/lib/python38.zip', '/usr/local/lib/python3.8', '/usr/local/lib/python3.8/lib-dynload', '/home/airflow/.local/lib/python3.8/site-packages', '/usr/local/lib/python3.8/site-packages', '/opt/airflow/dags', '/opt/airflow/config', '/opt/airflow/plugins', '/plugins/read']
+[2023-09-11T05:47:04.421+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test01']) retrieved from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:47:04.437+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:47:04.437+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-09-11T05:47:04.454+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:47:04.454+0000] {dag.py:3677} INFO - Setting next_dagrun for test01 to 2023-09-10T14:55:00+00:00, run_after=2023-09-11T14:55:00+00:00
+[2023-09-11T05:47:04.464+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/OrdersRetention.py took 3.801 seconds
+[2023-09-11T05:47:34.521+0000] {processor.py:157} INFO - Started process (PID=1196) to work on /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:47:34.522+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/OrdersRetention.py for tasks to queue
+[2023-09-11T05:47:34.522+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:47:34.522+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:47:36.638+0000] {logging_mixin.py:151} WARNING - /home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/table.py:2155 UserWarning: A progress bar was requested, but there was an error loading the tqdm library. Please install tqdm to use the progress bar functionality.
+[2023-09-11T05:47:37.716+0000] {logging_mixin.py:151} INFO - 2023-09-06 05:39:12.215000
+[2023-09-11T05:47:37.717+0000] {logging_mixin.py:151} INFO - Read
+[2023-09-11T05:47:37.907+0000] {logging_mixin.py:151} INFO -                           _id               createdAt  ...   state realPaidPrice
+3    64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+35   64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+38   64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+48   64f7e3a97afc67375aad4458 2023-09-06 02:27:54.436  ...  ACTIVE          4058
+49   64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+50   64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+62   64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+73   64f94467e5c5c448562a2f3f 2023-09-07 03:32:56.550  ...  ACTIVE           700
+74   64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+75   64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+76   64f967a5b58dcf6a2c167cff 2023-09-07 06:03:17.900  ...  ACTIVE          2000
+92   64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+117  64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+149  64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+152  64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+163  64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+164  64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+176  64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+188  64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+189  64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+206  64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+
+[21 rows x 5 columns]
+[2023-09-11T05:47:37.908+0000] {logging_mixin.py:151} INFO - MONGO
+[2023-09-11T05:47:37.909+0000] {logging_mixin.py:151} INFO - ['/home/airflow/.local/bin', '/usr/local/lib/python38.zip', '/usr/local/lib/python3.8', '/usr/local/lib/python3.8/lib-dynload', '/home/airflow/.local/lib/python3.8/site-packages', '/usr/local/lib/python3.8/site-packages', '/opt/airflow/dags', '/opt/airflow/config', '/opt/airflow/plugins', '/plugins/read']
+[2023-09-11T05:47:37.916+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test01']) retrieved from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:47:37.932+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:47:37.932+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-09-11T05:47:37.946+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:47:37.946+0000] {dag.py:3677} INFO - Setting next_dagrun for test01 to 2023-09-10T14:55:00+00:00, run_after=2023-09-11T14:55:00+00:00
+[2023-09-11T05:47:37.956+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/OrdersRetention.py took 3.438 seconds
+[2023-09-11T05:48:08.081+0000] {processor.py:157} INFO - Started process (PID=1208) to work on /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:48:08.082+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/OrdersRetention.py for tasks to queue
+[2023-09-11T05:48:08.082+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:48:08.082+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:48:10.600+0000] {logging_mixin.py:151} WARNING - /home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/table.py:2155 UserWarning: A progress bar was requested, but there was an error loading the tqdm library. Please install tqdm to use the progress bar functionality.
+[2023-09-11T05:48:16.351+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:48:16.351+0000] {gbq.py:356} INFO - Total time taken 8.26 s.
+Finished at 2023-09-11 05:48:16.
+[2023-09-11T05:48:16.352+0000] {logging_mixin.py:151} INFO - 2023-09-06 05:39:12.215000
+[2023-09-11T05:48:16.352+0000] {logging_mixin.py:151} INFO - Read
+[2023-09-11T05:48:16.546+0000] {logging_mixin.py:151} INFO -                           _id               createdAt  ...   state realPaidPrice
+3    64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+35   64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+38   64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+48   64f7e3a97afc67375aad4458 2023-09-06 02:27:54.436  ...  ACTIVE          4058
+49   64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+50   64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+62   64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+73   64f94467e5c5c448562a2f3f 2023-09-07 03:32:56.550  ...  ACTIVE           700
+74   64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+75   64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+76   64f967a5b58dcf6a2c167cff 2023-09-07 06:03:17.900  ...  ACTIVE          2000
+92   64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+117  64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+149  64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+152  64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+163  64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+164  64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+176  64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+188  64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+189  64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+206  64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+
+[21 rows x 5 columns]
+[2023-09-11T05:48:16.546+0000] {logging_mixin.py:151} INFO - MONGO
+[2023-09-11T05:48:16.548+0000] {logging_mixin.py:151} INFO - ['/home/airflow/.local/bin', '/usr/local/lib/python38.zip', '/usr/local/lib/python3.8', '/usr/local/lib/python3.8/lib-dynload', '/home/airflow/.local/lib/python3.8/site-packages', '/usr/local/lib/python3.8/site-packages', '/opt/airflow/dags', '/opt/airflow/config', '/opt/airflow/plugins', '/plugins/read']
+[2023-09-11T05:48:16.553+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test01']) retrieved from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:48:16.569+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:48:16.569+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-09-11T05:48:16.583+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:48:16.583+0000] {dag.py:3677} INFO - Setting next_dagrun for test01 to 2023-09-10T14:55:00+00:00, run_after=2023-09-11T14:55:00+00:00
+[2023-09-11T05:48:16.592+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/OrdersRetention.py took 8.514 seconds
+[2023-09-11T05:48:46.711+0000] {processor.py:157} INFO - Started process (PID=1227) to work on /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:48:46.712+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/OrdersRetention.py for tasks to queue
+[2023-09-11T05:48:46.713+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:48:46.712+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:48:48.873+0000] {logging_mixin.py:151} WARNING - /home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/table.py:2155 UserWarning: A progress bar was requested, but there was an error loading the tqdm library. Please install tqdm to use the progress bar functionality.
+[2023-09-11T05:48:50.240+0000] {logging_mixin.py:151} INFO - 2023-09-06 05:39:12.215000
+[2023-09-11T05:48:50.241+0000] {logging_mixin.py:151} INFO - Read
+[2023-09-11T05:48:50.517+0000] {logging_mixin.py:151} INFO -                           _id               createdAt  ...   state realPaidPrice
+3    64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+35   64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+38   64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+48   64f7e3a97afc67375aad4458 2023-09-06 02:27:54.436  ...  ACTIVE          4058
+49   64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+50   64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+62   64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+73   64f94467e5c5c448562a2f3f 2023-09-07 03:32:56.550  ...  ACTIVE           700
+74   64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+75   64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+76   64f967a5b58dcf6a2c167cff 2023-09-07 06:03:17.900  ...  ACTIVE          2000
+92   64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+117  64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+149  64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+152  64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+163  64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+164  64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+176  64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+188  64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+189  64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+206  64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+
+[21 rows x 5 columns]
+[2023-09-11T05:48:50.518+0000] {logging_mixin.py:151} INFO - MONGO
+[2023-09-11T05:48:50.519+0000] {logging_mixin.py:151} INFO - ['/home/airflow/.local/bin', '/usr/local/lib/python38.zip', '/usr/local/lib/python3.8', '/usr/local/lib/python3.8/lib-dynload', '/home/airflow/.local/lib/python3.8/site-packages', '/usr/local/lib/python3.8/site-packages', '/opt/airflow/dags', '/opt/airflow/config', '/opt/airflow/plugins', '/plugins/read']
+[2023-09-11T05:48:50.525+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test01']) retrieved from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:48:50.542+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:48:50.542+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-09-11T05:48:50.559+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:48:50.559+0000] {dag.py:3677} INFO - Setting next_dagrun for test01 to 2023-09-10T14:55:00+00:00, run_after=2023-09-11T14:55:00+00:00
+[2023-09-11T05:48:50.572+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/OrdersRetention.py took 3.863 seconds
+[2023-09-11T05:49:20.946+0000] {processor.py:157} INFO - Started process (PID=1239) to work on /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:49:20.947+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/OrdersRetention.py for tasks to queue
+[2023-09-11T05:49:20.947+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:49:20.947+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:49:23.141+0000] {logging_mixin.py:151} WARNING - /home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/table.py:2155 UserWarning: A progress bar was requested, but there was an error loading the tqdm library. Please install tqdm to use the progress bar functionality.
+[2023-09-11T05:49:23.633+0000] {logging_mixin.py:151} INFO - 2023-09-06 05:39:12.215000
+[2023-09-11T05:49:23.634+0000] {logging_mixin.py:151} INFO - Read
+[2023-09-11T05:49:23.785+0000] {logging_mixin.py:151} INFO -                           _id               createdAt  ...   state realPaidPrice
+3    64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+35   64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+38   64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+48   64f7e3a97afc67375aad4458 2023-09-06 02:27:54.436  ...  ACTIVE          4058
+49   64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+50   64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+62   64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+73   64f94467e5c5c448562a2f3f 2023-09-07 03:32:56.550  ...  ACTIVE           700
+74   64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+75   64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+76   64f967a5b58dcf6a2c167cff 2023-09-07 06:03:17.900  ...  ACTIVE          2000
+92   64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+117  64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+149  64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+152  64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+163  64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+164  64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+176  64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+188  64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+189  64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+206  64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+
+[21 rows x 5 columns]
+[2023-09-11T05:49:23.785+0000] {logging_mixin.py:151} INFO - MONGO
+[2023-09-11T05:49:23.787+0000] {logging_mixin.py:151} INFO - ['/home/airflow/.local/bin', '/usr/local/lib/python38.zip', '/usr/local/lib/python3.8', '/usr/local/lib/python3.8/lib-dynload', '/home/airflow/.local/lib/python3.8/site-packages', '/usr/local/lib/python3.8/site-packages', '/opt/airflow/dags', '/opt/airflow/config', '/opt/airflow/plugins', '/plugins/read']
+[2023-09-11T05:49:23.792+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test01']) retrieved from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:49:23.809+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:49:23.809+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-09-11T05:49:23.826+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:49:23.825+0000] {dag.py:3677} INFO - Setting next_dagrun for test01 to 2023-09-10T14:55:00+00:00, run_after=2023-09-11T14:55:00+00:00
+[2023-09-11T05:49:23.836+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/OrdersRetention.py took 2.894 seconds
+[2023-09-11T05:49:54.118+0000] {processor.py:157} INFO - Started process (PID=1251) to work on /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:49:54.119+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/OrdersRetention.py for tasks to queue
+[2023-09-11T05:49:54.119+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:49:54.119+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:49:56.066+0000] {logging_mixin.py:151} WARNING - /home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/table.py:2155 UserWarning: A progress bar was requested, but there was an error loading the tqdm library. Please install tqdm to use the progress bar functionality.
+[2023-09-11T05:49:58.222+0000] {logging_mixin.py:151} INFO - 2023-09-06 05:39:12.215000
+[2023-09-11T05:49:58.222+0000] {logging_mixin.py:151} INFO - Read
+[2023-09-11T05:49:58.425+0000] {logging_mixin.py:151} INFO -                           _id               createdAt  ...   state realPaidPrice
+3    64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+35   64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+38   64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+48   64f7e3a97afc67375aad4458 2023-09-06 02:27:54.436  ...  ACTIVE          4058
+49   64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+50   64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+62   64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+73   64f94467e5c5c448562a2f3f 2023-09-07 03:32:56.550  ...  ACTIVE           700
+74   64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+75   64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+76   64f967a5b58dcf6a2c167cff 2023-09-07 06:03:17.900  ...  ACTIVE          2000
+92   64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+117  64f17d5913b61d2d78d6d1ca 2023-09-01 05:57:45.855  ...  ACTIVE             0
+149  64f6f448a7712827000bce22 2023-09-05 09:26:32.990  ...  ACTIVE            64
+152  64f7d177de9de105f3acaa2f 2023-09-06 01:10:15.483  ...  ACTIVE             0
+163  64f7e460ef92996e83911371 2023-09-06 02:30:56.642  ...  ACTIVE          3900
+164  64f7f5ea31e44848a4c920bd 2023-09-06 03:45:48.571  ...  ACTIVE          4077
+176  64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE            61
+188  64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+189  64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+206  64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+
+[21 rows x 5 columns]
+[2023-09-11T05:49:58.426+0000] {logging_mixin.py:151} INFO - MONGO
+[2023-09-11T05:49:58.428+0000] {logging_mixin.py:151} INFO - ['/home/airflow/.local/bin', '/usr/local/lib/python38.zip', '/usr/local/lib/python3.8', '/usr/local/lib/python3.8/lib-dynload', '/home/airflow/.local/lib/python3.8/site-packages', '/usr/local/lib/python3.8/site-packages', '/opt/airflow/dags', '/opt/airflow/config', '/opt/airflow/plugins', '/plugins/read']
+[2023-09-11T05:49:58.433+0000] {processor.py:839} INFO - DAG(s) dict_keys(['test01']) retrieved from /opt/airflow/dags/OrdersRetention.py
+[2023-09-11T05:49:58.502+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:49:58.502+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-09-11T05:49:58.516+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:49:58.515+0000] {dag.py:3677} INFO - Setting next_dagrun for test01 to 2023-09-10T14:55:00+00:00, run_after=2023-09-11T14:55:00+00:00
+[2023-09-11T05:49:58.525+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/OrdersRetention.py took 4.411 seconds

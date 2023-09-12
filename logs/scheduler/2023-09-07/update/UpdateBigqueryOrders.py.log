@@ -1,0 +1,98 @@
+[2023-09-07T04:33:01.410+0000] {processor.py:157} INFO - Started process (PID=34) to work on /opt/airflow/dags/update/UpdateBigqueryOrders.py
+[2023-09-07T04:33:01.411+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update/UpdateBigqueryOrders.py for tasks to queue
+[2023-09-07T04:33:01.413+0000] {logging_mixin.py:151} INFO - [2023-09-07T04:33:01.413+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/update/UpdateBigqueryOrders.py
+[2023-09-07T04:33:01.420+0000] {logging_mixin.py:151} INFO - [2023-09-07T04:33:01.419+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/update/UpdateBigqueryOrders.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/update/UpdateBigqueryOrders.py", line 4, in <module>
+    from pymongo import MongoClient
+ModuleNotFoundError: No module named 'pymongo'
+[2023-09-07T04:33:01.421+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/update/UpdateBigqueryOrders.py
+[2023-09-07T04:33:01.454+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update/UpdateBigqueryOrders.py took 0.047 seconds
+[2023-09-07T04:33:31.889+0000] {processor.py:157} INFO - Started process (PID=45) to work on /opt/airflow/dags/update/UpdateBigqueryOrders.py
+[2023-09-07T04:33:31.890+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update/UpdateBigqueryOrders.py for tasks to queue
+[2023-09-07T04:33:31.891+0000] {logging_mixin.py:151} INFO - [2023-09-07T04:33:31.891+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/update/UpdateBigqueryOrders.py
+[2023-09-07T04:33:31.895+0000] {logging_mixin.py:151} INFO - [2023-09-07T04:33:31.894+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/update/UpdateBigqueryOrders.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/update/UpdateBigqueryOrders.py", line 4, in <module>
+    from pymongo import MongoClient
+ModuleNotFoundError: No module named 'pymongo'
+[2023-09-07T04:33:31.895+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/update/UpdateBigqueryOrders.py
+[2023-09-07T04:33:31.910+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update/UpdateBigqueryOrders.py took 0.024 seconds
+[2023-09-07T04:34:02.502+0000] {processor.py:157} INFO - Started process (PID=56) to work on /opt/airflow/dags/update/UpdateBigqueryOrders.py
+[2023-09-07T04:34:02.503+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update/UpdateBigqueryOrders.py for tasks to queue
+[2023-09-07T04:34:02.505+0000] {logging_mixin.py:151} INFO - [2023-09-07T04:34:02.504+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/update/UpdateBigqueryOrders.py
+[2023-09-07T04:34:02.509+0000] {logging_mixin.py:151} INFO - [2023-09-07T04:34:02.508+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/update/UpdateBigqueryOrders.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/update/UpdateBigqueryOrders.py", line 4, in <module>
+    from pymongo import MongoClient
+ModuleNotFoundError: No module named 'pymongo'
+[2023-09-07T04:34:02.509+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/update/UpdateBigqueryOrders.py
+[2023-09-07T04:34:02.524+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update/UpdateBigqueryOrders.py took 0.024 seconds
+[2023-09-07T04:34:33.086+0000] {processor.py:157} INFO - Started process (PID=67) to work on /opt/airflow/dags/update/UpdateBigqueryOrders.py
+[2023-09-07T04:34:33.087+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update/UpdateBigqueryOrders.py for tasks to queue
+[2023-09-07T04:34:33.089+0000] {logging_mixin.py:151} INFO - [2023-09-07T04:34:33.089+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/update/UpdateBigqueryOrders.py
+[2023-09-07T04:34:33.093+0000] {logging_mixin.py:151} INFO - [2023-09-07T04:34:33.092+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/update/UpdateBigqueryOrders.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/update/UpdateBigqueryOrders.py", line 4, in <module>
+    from pymongo import MongoClient
+ModuleNotFoundError: No module named 'pymongo'
+[2023-09-07T04:34:33.094+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/update/UpdateBigqueryOrders.py
+[2023-09-07T04:34:33.109+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update/UpdateBigqueryOrders.py took 0.026 seconds
+[2023-09-07T04:35:03.610+0000] {processor.py:157} INFO - Started process (PID=78) to work on /opt/airflow/dags/update/UpdateBigqueryOrders.py
+[2023-09-07T04:35:03.611+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update/UpdateBigqueryOrders.py for tasks to queue
+[2023-09-07T04:35:03.613+0000] {logging_mixin.py:151} INFO - [2023-09-07T04:35:03.613+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/update/UpdateBigqueryOrders.py
+[2023-09-07T04:35:03.617+0000] {logging_mixin.py:151} INFO - [2023-09-07T04:35:03.616+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/update/UpdateBigqueryOrders.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/update/UpdateBigqueryOrders.py", line 4, in <module>
+    from pymongo import MongoClient
+ModuleNotFoundError: No module named 'pymongo'
+[2023-09-07T04:35:03.618+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/update/UpdateBigqueryOrders.py
+[2023-09-07T04:35:03.633+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update/UpdateBigqueryOrders.py took 0.025 seconds
+[2023-09-07T04:35:34.234+0000] {processor.py:157} INFO - Started process (PID=89) to work on /opt/airflow/dags/update/UpdateBigqueryOrders.py
+[2023-09-07T04:35:34.235+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update/UpdateBigqueryOrders.py for tasks to queue
+[2023-09-07T04:35:34.237+0000] {logging_mixin.py:151} INFO - [2023-09-07T04:35:34.237+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/update/UpdateBigqueryOrders.py
+[2023-09-07T04:35:34.241+0000] {logging_mixin.py:151} INFO - [2023-09-07T04:35:34.241+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/update/UpdateBigqueryOrders.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/update/UpdateBigqueryOrders.py", line 4, in <module>
+    from pymongo import MongoClient
+ModuleNotFoundError: No module named 'pymongo'
+[2023-09-07T04:35:34.242+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/update/UpdateBigqueryOrders.py
+[2023-09-07T04:35:34.258+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update/UpdateBigqueryOrders.py took 0.026 seconds
+[2023-09-07T04:36:04.746+0000] {processor.py:157} INFO - Started process (PID=100) to work on /opt/airflow/dags/update/UpdateBigqueryOrders.py
+[2023-09-07T04:36:04.746+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/update/UpdateBigqueryOrders.py for tasks to queue
+[2023-09-07T04:36:04.748+0000] {logging_mixin.py:151} INFO - [2023-09-07T04:36:04.748+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/update/UpdateBigqueryOrders.py
+[2023-09-07T04:36:04.753+0000] {logging_mixin.py:151} INFO - [2023-09-07T04:36:04.752+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/update/UpdateBigqueryOrders.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/update/UpdateBigqueryOrders.py", line 4, in <module>
+    from pymongo import MongoClient
+ModuleNotFoundError: No module named 'pymongo'
+[2023-09-07T04:36:04.753+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/update/UpdateBigqueryOrders.py
+[2023-09-07T04:36:04.769+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/update/UpdateBigqueryOrders.py took 0.026 seconds
