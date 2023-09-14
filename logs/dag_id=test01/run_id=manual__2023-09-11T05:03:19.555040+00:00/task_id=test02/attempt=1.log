@@ -1,0 +1,29 @@
+[2023-09-11T05:03:27.235+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: test01.test02 manual__2023-09-11T05:03:19.555040+00:00 [queued]>
+[2023-09-11T05:03:27.240+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: test01.test02 manual__2023-09-11T05:03:19.555040+00:00 [queued]>
+[2023-09-11T05:03:27.240+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-09-11T05:03:27.247+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): test02> on 2023-09-11 05:03:19.555040+00:00
+[2023-09-11T05:03:27.251+0000] {standard_task_runner.py:57} INFO - Started process 188 to run task
+[2023-09-11T05:03:27.255+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'test01', 'test02', 'manual__2023-09-11T05:03:19.555040+00:00', '--job-id', '62', '--raw', '--subdir', 'DAGS_FOLDER/Orders_realPaidPrice.py', '--cfg-path', '/tmp/tmpmi4pl2vq']
+[2023-09-11T05:03:27.256+0000] {standard_task_runner.py:85} INFO - Job 62: Subtask test02
+[2023-09-11T05:03:27.291+0000] {task_command.py:415} INFO - Running <TaskInstance: test01.test02 manual__2023-09-11T05:03:19.555040+00:00 [running]> on host 4b74fbf5f024
+[2023-09-11T05:03:27.345+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='test01' AIRFLOW_CTX_TASK_ID='test02' AIRFLOW_CTX_EXECUTION_DATE='2023-09-11T05:03:19.555040+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-09-11T05:03:19.555040+00:00'
+[2023-09-11T05:03:27.406+0000] {logging_mixin.py:151} INFO - s3 bucket connected!
+[2023-09-11T05:03:27.411+0000] {logging_mixin.py:151} INFO - practice/2023-9-8-5.csv
+[2023-09-11T05:03:27.418+0000] {logging_mixin.py:151} INFO -                          _id               createdAt  ...   state realPaidPrice
+7   64f94467e5c5c448562a2f3f 2023-09-07 03:32:56.550  ...  ACTIVE           700
+8   64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+9   64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+10  64f967a5b58dcf6a2c167cff 2023-09-07 06:03:17.900  ...  ACTIVE          2000
+26  64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+55  64f94467e5c5c448562a2f3f 2023-09-07 03:32:56.550  ...  ACTIVE           700
+56  64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+57  64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+58  64f967a5b58dcf6a2c167cff 2023-09-07 06:03:17.900  ...  ACTIVE          2000
+74  64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+
+[10 rows x 5 columns]
+[2023-09-11T05:03:27.581+0000] {logging_mixin.py:151} INFO - 데이터가 S3 버킷 wingeatdata의 practice/2023-9-8-5.csv 위치에 저장되었습니다111.
+[2023-09-11T05:03:27.582+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-09-11T05:03:27.591+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=test01, task_id=test02, execution_date=20230911T050319, start_date=20230911T050327, end_date=20230911T050327
+[2023-09-11T05:03:27.637+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-09-11T05:03:27.652+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

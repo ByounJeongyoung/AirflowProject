@@ -1,0 +1,33 @@
+[2023-09-13T10:07:13.536+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: test01.S3Write manual__2023-09-13T10:07:12.269309+00:00 [queued]>
+[2023-09-13T10:07:13.540+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: test01.S3Write manual__2023-09-13T10:07:12.269309+00:00 [queued]>
+[2023-09-13T10:07:13.541+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-09-13T10:07:13.547+0000] {taskinstance.py:1382} INFO - Executing <Task(_PythonDecoratedOperator): S3Write> on 2023-09-13 10:07:12.269309+00:00
+[2023-09-13T10:07:13.551+0000] {standard_task_runner.py:57} INFO - Started process 2128 to run task
+[2023-09-13T10:07:13.555+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'test01', 'S3Write', 'manual__2023-09-13T10:07:12.269309+00:00', '--job-id', '98', '--raw', '--subdir', 'DAGS_FOLDER/OrdersRetention.py', '--cfg-path', '/tmp/tmpd6lu7399']
+[2023-09-13T10:07:13.557+0000] {standard_task_runner.py:85} INFO - Job 98: Subtask S3Write
+[2023-09-13T10:07:13.608+0000] {task_command.py:415} INFO - Running <TaskInstance: test01.S3Write manual__2023-09-13T10:07:12.269309+00:00 [running]> on host a6ccc1151b0d
+[2023-09-13T10:07:13.666+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='test01' AIRFLOW_CTX_TASK_ID='S3Write' AIRFLOW_CTX_EXECUTION_DATE='2023-09-13T10:07:12.269309+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-09-13T10:07:12.269309+00:00'
+[2023-09-13T10:07:15.910+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/google/cloud/bigquery/table.py:2155: UserWarning: A progress bar was requested, but there was an error loading the tqdm library. Please install tqdm to use the progress bar functionality.
+  record_batch = self.to_arrow(
+
+[2023-09-13T10:07:17.054+0000] {logging_mixin.py:151} INFO -                            _id               createdAt  ...   state realPaidPrice
+7     6177ae39c745075258c6dcb3 2021-10-26 07:28:57.951  ...  ACTIVE       54720.0
+13    6178d63bd309ff00850595dd 2021-10-27 04:31:55.581  ...  ACTIVE       28750.0
+31    6180a4bdd86988550ab01a2d 2021-11-02 02:38:53.972  ...  ACTIVE       11630.0
+32    6180a51ed869881bfeb01a32 2021-11-02 02:40:30.586  ...  ACTIVE       11630.0
+36    6181f2b3f445cb004e1f401f 2021-11-03 02:23:47.266  ...  ACTIVE        3990.0
+...                        ...                     ...  ...     ...           ...
+9706  64f80e91eedabb583390d6ee 2023-09-06 05:30:57.710  ...  ACTIVE          61.0
+9718  64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE       35711.0
+9736  64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE        1600.0
+9774  650146ee56b0d968aaa9e60f 2023-09-13 05:21:51.893  ...  ACTIVE         100.0
+9775  6501476f56b0d99f35a9e613 2023-09-13 05:24:00.995  ...  ACTIVE         100.0
+
+[2150 rows x 5 columns]
+[2023-09-13T10:07:17.120+0000] {logging_mixin.py:151} INFO - s3 bucket connected!
+[2023-09-13T10:07:17.405+0000] {logging_mixin.py:151} INFO - 데이터가 S3 버킷 wingeatdata의 practice/2023-9-13-5.csv 위치에 저장되었습니다.
+[2023-09-13T10:07:17.405+0000] {logging_mixin.py:151} INFO - ----------------------------------------------------------2023-09-13 05:24:00.995000
+[2023-09-13T10:07:17.408+0000] {python.py:194} INFO - Done. Returned value was: 2023-09-13 05:24:00.995000
+[2023-09-13T10:07:17.441+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=test01, task_id=S3Write, execution_date=20230913T100712, start_date=20230913T100713, end_date=20230913T100717
+[2023-09-13T10:07:17.468+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-09-13T10:07:17.486+0000] {taskinstance.py:2784} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,98 @@
+[2023-09-07T04:33:01.028+0000] {processor.py:157} INFO - Started process (PID=32) to work on /opt/airflow/dags/read/ReadS3Orders.py
+[2023-09-07T04:33:01.028+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/read/ReadS3Orders.py for tasks to queue
+[2023-09-07T04:33:01.030+0000] {logging_mixin.py:151} INFO - [2023-09-07T04:33:01.030+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/read/ReadS3Orders.py
+[2023-09-07T04:33:01.239+0000] {logging_mixin.py:151} INFO - [2023-09-07T04:33:01.237+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/read/ReadS3Orders.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read/ReadS3Orders.py", line 10, in <module>
+    from CreateS3Orders import FileInformation
+ModuleNotFoundError: No module named 'CreateS3Orders'
+[2023-09-07T04:33:01.239+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/read/ReadS3Orders.py
+[2023-09-07T04:33:01.263+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/read/ReadS3Orders.py took 0.239 seconds
+[2023-09-07T04:33:31.793+0000] {processor.py:157} INFO - Started process (PID=43) to work on /opt/airflow/dags/read/ReadS3Orders.py
+[2023-09-07T04:33:31.794+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/read/ReadS3Orders.py for tasks to queue
+[2023-09-07T04:33:31.796+0000] {logging_mixin.py:151} INFO - [2023-09-07T04:33:31.795+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/read/ReadS3Orders.py
+[2023-09-07T04:33:31.850+0000] {logging_mixin.py:151} INFO - [2023-09-07T04:33:31.849+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/read/ReadS3Orders.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read/ReadS3Orders.py", line 10, in <module>
+    from CreateS3Orders import FileInformation
+ModuleNotFoundError: No module named 'CreateS3Orders'
+[2023-09-07T04:33:31.850+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/read/ReadS3Orders.py
+[2023-09-07T04:33:31.868+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/read/ReadS3Orders.py took 0.078 seconds
+[2023-09-07T04:34:02.333+0000] {processor.py:157} INFO - Started process (PID=54) to work on /opt/airflow/dags/read/ReadS3Orders.py
+[2023-09-07T04:34:02.333+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/read/ReadS3Orders.py for tasks to queue
+[2023-09-07T04:34:02.335+0000] {logging_mixin.py:151} INFO - [2023-09-07T04:34:02.334+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/read/ReadS3Orders.py
+[2023-09-07T04:34:02.385+0000] {logging_mixin.py:151} INFO - [2023-09-07T04:34:02.384+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/read/ReadS3Orders.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read/ReadS3Orders.py", line 10, in <module>
+    from CreateS3Orders import FileInformation
+ModuleNotFoundError: No module named 'CreateS3Orders'
+[2023-09-07T04:34:02.386+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/read/ReadS3Orders.py
+[2023-09-07T04:34:02.401+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/read/ReadS3Orders.py took 0.071 seconds
+[2023-09-07T04:34:32.906+0000] {processor.py:157} INFO - Started process (PID=65) to work on /opt/airflow/dags/read/ReadS3Orders.py
+[2023-09-07T04:34:32.907+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/read/ReadS3Orders.py for tasks to queue
+[2023-09-07T04:34:32.908+0000] {logging_mixin.py:151} INFO - [2023-09-07T04:34:32.908+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/read/ReadS3Orders.py
+[2023-09-07T04:34:32.963+0000] {logging_mixin.py:151} INFO - [2023-09-07T04:34:32.962+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/read/ReadS3Orders.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read/ReadS3Orders.py", line 10, in <module>
+    from CreateS3Orders import FileInformation
+ModuleNotFoundError: No module named 'CreateS3Orders'
+[2023-09-07T04:34:32.964+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/read/ReadS3Orders.py
+[2023-09-07T04:34:32.981+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/read/ReadS3Orders.py took 0.077 seconds
+[2023-09-07T04:35:03.432+0000] {processor.py:157} INFO - Started process (PID=76) to work on /opt/airflow/dags/read/ReadS3Orders.py
+[2023-09-07T04:35:03.433+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/read/ReadS3Orders.py for tasks to queue
+[2023-09-07T04:35:03.435+0000] {logging_mixin.py:151} INFO - [2023-09-07T04:35:03.435+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/read/ReadS3Orders.py
+[2023-09-07T04:35:03.489+0000] {logging_mixin.py:151} INFO - [2023-09-07T04:35:03.488+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/read/ReadS3Orders.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read/ReadS3Orders.py", line 10, in <module>
+    from CreateS3Orders import FileInformation
+ModuleNotFoundError: No module named 'CreateS3Orders'
+[2023-09-07T04:35:03.490+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/read/ReadS3Orders.py
+[2023-09-07T04:35:03.505+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/read/ReadS3Orders.py took 0.077 seconds
+[2023-09-07T04:35:34.045+0000] {processor.py:157} INFO - Started process (PID=87) to work on /opt/airflow/dags/read/ReadS3Orders.py
+[2023-09-07T04:35:34.046+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/read/ReadS3Orders.py for tasks to queue
+[2023-09-07T04:35:34.050+0000] {logging_mixin.py:151} INFO - [2023-09-07T04:35:34.049+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/read/ReadS3Orders.py
+[2023-09-07T04:35:34.106+0000] {logging_mixin.py:151} INFO - [2023-09-07T04:35:34.105+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/read/ReadS3Orders.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read/ReadS3Orders.py", line 10, in <module>
+    from CreateS3Orders import FileInformation
+ModuleNotFoundError: No module named 'CreateS3Orders'
+[2023-09-07T04:35:34.106+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/read/ReadS3Orders.py
+[2023-09-07T04:35:34.123+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/read/ReadS3Orders.py took 0.082 seconds
+[2023-09-07T04:36:04.644+0000] {processor.py:157} INFO - Started process (PID=98) to work on /opt/airflow/dags/read/ReadS3Orders.py
+[2023-09-07T04:36:04.646+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/read/ReadS3Orders.py for tasks to queue
+[2023-09-07T04:36:04.649+0000] {logging_mixin.py:151} INFO - [2023-09-07T04:36:04.648+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/read/ReadS3Orders.py
+[2023-09-07T04:36:04.709+0000] {logging_mixin.py:151} INFO - [2023-09-07T04:36:04.708+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/read/ReadS3Orders.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read/ReadS3Orders.py", line 10, in <module>
+    from CreateS3Orders import FileInformation
+ModuleNotFoundError: No module named 'CreateS3Orders'
+[2023-09-07T04:36:04.709+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/read/ReadS3Orders.py
+[2023-09-07T04:36:04.725+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/read/ReadS3Orders.py took 0.086 seconds

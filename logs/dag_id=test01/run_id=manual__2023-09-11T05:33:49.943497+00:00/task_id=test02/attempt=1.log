@@ -1,0 +1,32 @@
+[2023-09-11T05:34:04.860+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: test01.test02 manual__2023-09-11T05:33:49.943497+00:00 [queued]>
+[2023-09-11T05:34:04.864+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: test01.test02 manual__2023-09-11T05:33:49.943497+00:00 [queued]>
+[2023-09-11T05:34:04.865+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-09-11T05:34:04.872+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): test02> on 2023-09-11 05:33:49.943497+00:00
+[2023-09-11T05:34:04.877+0000] {standard_task_runner.py:57} INFO - Started process 749 to run task
+[2023-09-11T05:34:04.881+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'test01', 'test02', 'manual__2023-09-11T05:33:49.943497+00:00', '--job-id', '70', '--raw', '--subdir', 'DAGS_FOLDER/Orders_realPaidPrice.py', '--cfg-path', '/tmp/tmpxxl_ehna']
+[2023-09-11T05:34:04.882+0000] {standard_task_runner.py:85} INFO - Job 70: Subtask test02
+[2023-09-11T05:34:04.918+0000] {task_command.py:415} INFO - Running <TaskInstance: test01.test02 manual__2023-09-11T05:33:49.943497+00:00 [running]> on host 4b74fbf5f024
+[2023-09-11T05:34:05.123+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='test01' AIRFLOW_CTX_TASK_ID='test02' AIRFLOW_CTX_EXECUTION_DATE='2023-09-11T05:33:49.943497+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-09-11T05:33:49.943497+00:00'
+[2023-09-11T05:34:05.202+0000] {logging_mixin.py:151} INFO - {'ResponseMetadata': {'RequestId': 'SA5JFTA6ZDZ8RW67', 'HostId': 'yiUNcnFfgKyjlYF8zDWuWPlG+2Z/OSyvGn0eNjBt845/aQwIwgCFwuOLNV8QPFAOcKQNNSw9iOk=', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amz-id-2': 'yiUNcnFfgKyjlYF8zDWuWPlG+2Z/OSyvGn0eNjBt845/aQwIwgCFwuOLNV8QPFAOcKQNNSw9iOk=', 'x-amz-request-id': 'SA5JFTA6ZDZ8RW67', 'date': 'Mon, 11 Sep 2023 05:34:06 GMT', 'last-modified': 'Mon, 11 Sep 2023 05:33:58 GMT', 'etag': '"aac4d6e9a87d3a0ead13b2175af3c094"', 'x-amz-server-side-encryption': 'AES256', 'accept-ranges': 'bytes', 'content-type': 'binary/octet-stream', 'server': 'AmazonS3', 'content-length': '446'}, 'RetryAttempts': 0}, 'AcceptRanges': 'bytes', 'LastModified': datetime.datetime(2023, 9, 11, 5, 33, 58, tzinfo=tzutc()), 'ContentLength': 446, 'ETag': '"aac4d6e9a87d3a0ead13b2175af3c094"', 'ContentType': 'binary/octet-stream', 'ServerSideEncryption': 'AES256', 'Metadata': {}, 'Body': <botocore.response.StreamingBody object at 0xffff67a2ed60>}
+[2023-09-11T05:34:05.209+0000] {logging_mixin.py:151} INFO -                         _id                createdAt  ...   state realPaidPrice
+0  64f94d45e5c5c45ff62a2f42  2023-09-07 04:10:45.529  ...  ACTIVE         35711
+1  64f959bc66d9b0f95bb55dca  2023-09-07 05:03:57.430  ...  ACTIVE          4077
+2  64faaafff7b9165e1490f84c  2023-09-08 05:02:55.614  ...  ACTIVE          1600
+3  64f94d45e5c5c45ff62a2f42  2023-09-07 04:10:45.529  ...  ACTIVE         35711
+4  64f959bc66d9b0f95bb55dca  2023-09-07 05:03:57.430  ...  ACTIVE          4077
+5  64faaafff7b9165e1490f84c  2023-09-08 05:02:55.614  ...  ACTIVE          1600
+
+[6 rows x 5 columns]
+[2023-09-11T05:34:05.209+0000] {logging_mixin.py:151} INFO - 읽기 성공
+[2023-09-11T05:34:05.210+0000] {python.py:194} INFO - Done. Returned value was:                         _id                createdAt  ...   state realPaidPrice
+0  64f94d45e5c5c45ff62a2f42  2023-09-07 04:10:45.529  ...  ACTIVE         35711
+1  64f959bc66d9b0f95bb55dca  2023-09-07 05:03:57.430  ...  ACTIVE          4077
+2  64faaafff7b9165e1490f84c  2023-09-08 05:02:55.614  ...  ACTIVE          1600
+3  64f94d45e5c5c45ff62a2f42  2023-09-07 04:10:45.529  ...  ACTIVE         35711
+4  64f959bc66d9b0f95bb55dca  2023-09-07 05:03:57.430  ...  ACTIVE          4077
+5  64faaafff7b9165e1490f84c  2023-09-08 05:02:55.614  ...  ACTIVE          1600
+
+[6 rows x 5 columns]
+[2023-09-11T05:34:05.255+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=test01, task_id=test02, execution_date=20230911T053349, start_date=20230911T053404, end_date=20230911T053405
+[2023-09-11T05:34:05.308+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-09-11T05:34:05.323+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

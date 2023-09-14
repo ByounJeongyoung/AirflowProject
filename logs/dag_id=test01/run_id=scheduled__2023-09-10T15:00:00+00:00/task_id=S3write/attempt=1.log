@@ -1,0 +1,28 @@
+[2023-09-12T03:51:36.167+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: test01.S3write scheduled__2023-09-10T15:00:00+00:00 [queued]>
+[2023-09-12T03:51:36.172+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: test01.S3write scheduled__2023-09-10T15:00:00+00:00 [queued]>
+[2023-09-12T03:51:36.172+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-09-12T03:51:36.179+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): S3write> on 2023-09-10 15:00:00+00:00
+[2023-09-12T03:51:36.183+0000] {standard_task_runner.py:57} INFO - Started process 321 to run task
+[2023-09-12T03:51:36.187+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'test01', 'S3write', 'scheduled__2023-09-10T15:00:00+00:00', '--job-id', '77', '--raw', '--subdir', 'DAGS_FOLDER/OrdersRetention.py', '--cfg-path', '/tmp/tmpn3u4wout']
+[2023-09-12T03:51:36.189+0000] {standard_task_runner.py:85} INFO - Job 77: Subtask S3write
+[2023-09-12T03:51:36.227+0000] {task_command.py:415} INFO - Running <TaskInstance: test01.S3write scheduled__2023-09-10T15:00:00+00:00 [running]> on host a6ccc1151b0d
+[2023-09-12T03:51:36.281+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='test01' AIRFLOW_CTX_TASK_ID='S3write' AIRFLOW_CTX_EXECUTION_DATE='2023-09-10T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-09-10T15:00:00+00:00'
+[2023-09-12T03:51:36.341+0000] {logging_mixin.py:151} INFO - s3 bucket connected!
+[2023-09-12T03:51:36.346+0000] {logging_mixin.py:151} INFO - practice/2023-9-10-5.csv
+[2023-09-12T03:51:36.352+0000] {logging_mixin.py:151} INFO -                           _id               createdAt  ...   state realPaidPrice
+8    64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+9    64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+26   64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+62   64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+63   64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+80   64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+116  64f94d45e5c5c45ff62a2f42 2023-09-07 04:10:45.529  ...  ACTIVE         35711
+117  64f959bc66d9b0f95bb55dca 2023-09-07 05:03:57.430  ...  ACTIVE          4077
+134  64faaafff7b9165e1490f84c 2023-09-08 05:02:55.614  ...  ACTIVE          1600
+
+[9 rows x 5 columns]
+[2023-09-12T03:51:36.605+0000] {logging_mixin.py:151} INFO - 데이터가 S3 버킷 wingeatdata의 practice/2023-9-10-5.csv 위치에 저장되었습니다.
+[2023-09-12T03:51:36.608+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-09-12T03:51:36.624+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=test01, task_id=S3write, execution_date=20230910T150000, start_date=20230912T035136, end_date=20230912T035136
+[2023-09-12T03:51:36.653+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-09-12T03:51:36.673+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

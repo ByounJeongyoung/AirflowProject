@@ -1,0 +1,28 @@
+[2023-09-13T08:40:41.551+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: test01.S3Read manual__2023-09-13T08:40:36.315075+00:00 [queued]>
+[2023-09-13T08:40:41.556+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: test01.S3Read manual__2023-09-13T08:40:36.315075+00:00 [queued]>
+[2023-09-13T08:40:41.558+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-09-13T08:40:41.565+0000] {taskinstance.py:1382} INFO - Executing <Task(_PythonDecoratedOperator): S3Read> on 2023-09-13 08:40:36.315075+00:00
+[2023-09-13T08:40:41.569+0000] {standard_task_runner.py:57} INFO - Started process 786 to run task
+[2023-09-13T08:40:41.573+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'test01', 'S3Read', 'manual__2023-09-13T08:40:36.315075+00:00', '--job-id', '95', '--raw', '--subdir', 'DAGS_FOLDER/OrdersRetention.py', '--cfg-path', '/tmp/tmpznb8x807']
+[2023-09-13T08:40:41.575+0000] {standard_task_runner.py:85} INFO - Job 95: Subtask S3Read
+[2023-09-13T08:40:41.612+0000] {task_command.py:415} INFO - Running <TaskInstance: test01.S3Read manual__2023-09-13T08:40:36.315075+00:00 [running]> on host a6ccc1151b0d
+[2023-09-13T08:40:41.674+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='test01' AIRFLOW_CTX_TASK_ID='S3Read' AIRFLOW_CTX_EXECUTION_DATE='2023-09-13T08:40:36.315075+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-09-13T08:40:36.315075+00:00'
+[2023-09-13T08:40:41.820+0000] {logging_mixin.py:151} INFO - S3에서 파일을 읽었습니다.아래는 다운받은 데이터 입니다.
+[2023-09-13T08:40:41.821+0000] {logging_mixin.py:151} INFO - ----------------------------------------------------------2023-09-13 05:24:00.995000+00:00
+[2023-09-13T08:40:41.821+0000] {taskinstance.py:1943} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/base.py", line 221, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/OrdersRetention.py", line 35, in S3Read
+    ReadS3OrdersData(fileName)
+  File "/opt/airflow/plugins/read/ReadS3Orders.py", line 34, in ReadS3OrdersData
+    cd = service_account.Credentials.from_service_account_file(
+NameError: name 'service_account' is not defined
+[2023-09-13T08:40:41.830+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=test01, task_id=S3Read, execution_date=20230913T084036, start_date=20230913T084041, end_date=20230913T084041
+[2023-09-13T08:40:41.840+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 95 for task S3Read (name 'service_account' is not defined; 786)
+[2023-09-13T08:40:41.868+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-09-13T08:40:41.883+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

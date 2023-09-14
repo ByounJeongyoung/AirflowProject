@@ -1,0 +1,50 @@
+[2023-09-11T05:31:12.722+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: test01.test02 manual__2023-09-11T05:30:49.814263+00:00 [queued]>
+[2023-09-11T05:31:12.727+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: test01.test02 manual__2023-09-11T05:30:49.814263+00:00 [queued]>
+[2023-09-11T05:31:12.727+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-09-11T05:31:12.735+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): test02> on 2023-09-11 05:30:49.814263+00:00
+[2023-09-11T05:31:12.739+0000] {standard_task_runner.py:57} INFO - Started process 679 to run task
+[2023-09-11T05:31:12.742+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'test01', 'test02', 'manual__2023-09-11T05:30:49.814263+00:00', '--job-id', '68', '--raw', '--subdir', 'DAGS_FOLDER/Orders_realPaidPrice.py', '--cfg-path', '/tmp/tmpzmkzue5h']
+[2023-09-11T05:31:12.744+0000] {standard_task_runner.py:85} INFO - Job 68: Subtask test02
+[2023-09-11T05:31:12.780+0000] {task_command.py:415} INFO - Running <TaskInstance: test01.test02 manual__2023-09-11T05:30:49.814263+00:00 [running]> on host 4b74fbf5f024
+[2023-09-11T05:31:12.835+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='test01' AIRFLOW_CTX_TASK_ID='test02' AIRFLOW_CTX_EXECUTION_DATE='2023-09-11T05:30:49.814263+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-09-11T05:30:49.814263+00:00'
+[2023-09-11T05:31:12.902+0000] {logging_mixin.py:151} INFO - s3 bucket connected!
+[2023-09-11T05:31:12.903+0000] {python.py:194} INFO - Done. Returned value was: <botocore.client.S3 object at 0xffff6556f6a0>
+[2023-09-11T05:31:12.911+0000] {xcom.py:661} ERROR - Object of type S3 is not JSON serializable. If you are using pickle instead of JSON for XCom, then you need to enable pickle support for XCom in your *** config or make sure to decorate your object with attr.
+[2023-09-11T05:31:12.912+0000] {taskinstance.py:1943} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/json.py", line 91, in default
+    return serialize(o)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/serialization/serde.py", line 178, in serialize
+    raise TypeError(f"cannot serialize object of type {cls}")
+TypeError: cannot serialize object of type <class 'botocore.client.S3'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/session.py", line 74, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 2485, in xcom_push
+    XCom.set(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/session.py", line 74, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/xcom.py", line 244, in set
+    value = cls.serialize_value(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/xcom.py", line 659, in serialize_value
+    return json.dumps(value, cls=XComEncoder).encode("UTF-8")
+  File "/usr/local/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/json.py", line 104, in encode
+    return super().encode(o)
+  File "/usr/local/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/json.py", line 93, in default
+    return super().default(o)
+  File "/usr/local/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type S3 is not JSON serializable
+[2023-09-11T05:31:12.921+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=test01, task_id=test02, execution_date=20230911T053049, start_date=20230911T053112, end_date=20230911T053112
+[2023-09-11T05:31:12.928+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 68 for task test02 (Object of type S3 is not JSON serializable; 679)
+[2023-09-11T05:31:12.954+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-09-11T05:31:12.972+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

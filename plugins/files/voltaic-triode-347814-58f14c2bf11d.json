@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "voltaic-triode-347814",
+  "private_key_id": "58f14c2bf11dc19f5093239b50efe460553e04ed",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDCqkT4uzhCFSmi\n1AWIpWSBp7Al8s8EIi7SpasGY9ABASniZ9y5Tk4krR/Ickqfx0Jfi3+fVWf5TLvU\nnasdbw9kbe4A9ftIo1m/Zhw12cCtffuN++o27Brp46UrA711Ey3cwFSVqw9jvFGl\nonFLsJ8JQBxJ8ySHU6/ohySoUAeIWx4EysPpyfkfoR5O51SNum8sSaJAvqy9bJHg\nux8ank1y/fnXesUR4zyveoWraUb35QZnPOJAEyCozY9tkWKZsjdGy6Ch1XZbbbsH\nJ/jSr76E25dRrJdNrc092qBCyQHQQHfQX7qroR6p8Ftv+zgM2uWBX6/eSPmb/dBz\n9ZvId4xxAgMBAAECggEAAmgEq37z+HQmxDui+GAUBJrILYXpe3N5OPMhkLYH5pVH\nOWRfiP5f7qnhslKAW+aEimYQ7S0q+HzTdxK+YGIksnD9787anPig9cHbQCqpjDN6\nGjSWnfhv8jt1SZl1nHaA2wFZIlL/oRPdPgMKq7z6kEyVtO/PoCkfi+wsvrRjjXLO\nXrcfy2E6ZqWt9HcBJDO+LCGliaFkQ/GLjSee4W7bNv3j7Y6rsXhR6rwJEZhMlXyp\ndyD0SeaSFIC73sGlMnn7lkuQeJs2AwBETBWWUb+Yd8yj64w2BYDWva7AS3INV6hf\nPKzs7BEA0L0AjCkwUFlCUOJHfsfKWQxhOgO81Rj+qQKBgQDrVDnLXk5hRtDynb7g\nfY1/ZIZmmFIm/BuJ5KtlzhOxQnGwGgUzNtUyPSu9kicERREF7ZIhS0C/agxSWLWo\nSeoFPMRqgGZ+zwkhwAykxTmZ6XNfAWjUL6ZlNRAmVw4P9UZYsIIiuQDqVllPZ05R\nATeF7NXJBpqxinkuphg3sw486QKBgQDTw6WMHapZ/V1kA1S9Juy1rQnsnBUuZL+s\nKatNrw8L8aFyKkpRJkxeP5rNbfMBoWjupdp+9ULh1YvBkVuQj6LjJhCbeS9BbPEf\n8OokRRrAHNCMoFRUkV+w3Z6thlerSAxJDvy6bxMbpERw57J64ecutoSlm+fpPX0e\nf/FEsZH+SQKBgFx7Bhdo4U6TQOwHmAqq7J+Cxtqsw6Q0cTIYnk7s1IpVvU3ie+ar\nhs8ugPEH7bNc3RrCSSoyY6iVqW/3ErSnD4OtZNchzKXLASC1U4KxSzi0KLXOXP7+\nFtsxJj6a+ZjF4DZcb1fr8nMlKgXtaDanTsWf1EgjA0oATC1L8rp48IB5AoGBAKSk\ntq+r2OjCjrvVwyqVevD9qnumFunNNyEZ/LAXbXFx2n4y1zkkt7eHaEpUM92Oq1Dw\n7mJLOkbviwtignhw1MoarErU+6K4mvikjMbKW7QGMzdC6I4fwPB4PojXrI3lJHgh\nCOnCtm6FVxkZa7EStnWhPpysDLFRN1hhTSqFjObRAoGBANvzEGkLXVgYJAurtZrq\nuvOfCwTu2JpG1+BGGAURUohWxoZ1xTUBBFBHsmNpxv72HtxLc/KZ/VdWe0Lb7cuM\nPMtp1TgUD70KD2Dwghv0/mA+j1c8iHPiPq0Calta53OTK2CsYaTPE1TAnNL3XAea\nYqbuiwwVwffx/zanvkMVFm8/\n-----END PRIVATE KEY-----\n",
+  "client_email": "me-and-coffee@voltaic-triode-347814.iam.gserviceaccount.com",
+  "client_id": "100460075507513596734",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/me-and-coffee%40voltaic-triode-347814.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

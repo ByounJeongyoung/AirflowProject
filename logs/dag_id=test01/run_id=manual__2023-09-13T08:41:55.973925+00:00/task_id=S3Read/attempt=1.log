@@ -1,0 +1,17 @@
+[2023-09-13T08:42:01.954+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: test01.S3Read manual__2023-09-13T08:41:55.973925+00:00 [queued]>
+[2023-09-13T08:42:01.959+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: test01.S3Read manual__2023-09-13T08:41:55.973925+00:00 [queued]>
+[2023-09-13T08:42:01.959+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-09-13T08:42:01.965+0000] {taskinstance.py:1382} INFO - Executing <Task(_PythonDecoratedOperator): S3Read> on 2023-09-13 08:41:55.973925+00:00
+[2023-09-13T08:42:01.969+0000] {standard_task_runner.py:57} INFO - Started process 812 to run task
+[2023-09-13T08:42:01.973+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'test01', 'S3Read', 'manual__2023-09-13T08:41:55.973925+00:00', '--job-id', '97', '--raw', '--subdir', 'DAGS_FOLDER/OrdersRetention.py', '--cfg-path', '/tmp/tmp8oi2t5cq']
+[2023-09-13T08:42:01.975+0000] {standard_task_runner.py:85} INFO - Job 97: Subtask S3Read
+[2023-09-13T08:42:02.011+0000] {task_command.py:415} INFO - Running <TaskInstance: test01.S3Read manual__2023-09-13T08:41:55.973925+00:00 [running]> on host a6ccc1151b0d
+[2023-09-13T08:42:02.071+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='test01' AIRFLOW_CTX_TASK_ID='S3Read' AIRFLOW_CTX_EXECUTION_DATE='2023-09-13T08:41:55.973925+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-09-13T08:41:55.973925+00:00'
+[2023-09-13T08:42:02.211+0000] {logging_mixin.py:151} INFO - S3에서 파일을 읽었습니다.아래는 다운받은 데이터 입니다.
+[2023-09-13T08:42:02.211+0000] {logging_mixin.py:151} INFO - ----------------------------------------------------------2023-09-13 05:24:00.995000+00:00
+[2023-09-13T08:42:07.328+0000] {gbq.py:616} INFO - 4 out of 4 rows loaded.
+[2023-09-13T08:42:07.329+0000] {logging_mixin.py:151} INFO - migration complete
+[2023-09-13T08:42:07.329+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-09-13T08:42:07.340+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=test01, task_id=S3Read, execution_date=20230913T084155, start_date=20230913T084201, end_date=20230913T084207
+[2023-09-13T08:42:07.380+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-09-13T08:42:07.392+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check
