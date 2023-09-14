@@ -28,6 +28,6 @@ def updateToBigQuery():
     # DB 저장소
     destination_table = f"{project_id}.{dataset_id}.{table_id}"
     # 업로드
-    data.to_gbq(destination_table, project_id=project_id, if_exists='append', credentials=cd)
+    data.to_gbq(destination_table, project_id=project_id, if_exists='replace', credentials=cd)
 
     print('migration complete')
