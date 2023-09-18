@@ -18,8 +18,8 @@ import os
 
 
 with DAG(
-    dag_id='test01',
-    schedule_interval='00 00 * * *',
+    dag_id='Retention',
+    schedule_interval='* * * * *',
     start_date=pendulum.datetime(2023, 9, 10, tz="Asia/Seoul"),
     catchup=False,
     tags=['OrdersRetention']

@@ -5,20 +5,21 @@ from pandas.core.frame import DataFrame
 import json
 from glob import glob
 import os
+from information.ProjectInformation import Bigquery_information
 
 # 현재 파일의 경로를 기반으로 작업 디렉토리 설정
 current_dir = os.path.dirname(__file__)
 airflow_work_dir = os.path.abspath(os.path.join(current_dir, '../files/voltaic-triode-347814-58f14c2bf11d.json'))  # 상위 디렉토리
 
-project_id = 'voltaic-triode-347814'
-dataset_id = 'personal'
-table_id = 'wingeat_data_dateTime'
+project_id = Bigquery_information.project_id.value
+dataset_id = Bigquery_information.dataset_id.value
+table_id = Bigquery_information.table_id.value
 
 #권한 설정
 cd = service_account.Credentials.from_service_account_file(
     airflow_work_dir
     )
-# data를 사용하여 작업 수행
+
 def MaxCreatedAtFunc() -> datetime:
 
     pandas_gbq.context.credentials = cd
@@ -31,7 +32,7 @@ def MaxCreatedAtFunc() -> datetime:
 
     #컬럼 지정, deafault F0
     df.columns = ['max_createdAt']
-    max_createdAt = df.loc[0,'max_createdAt'] #DataFrame에서 value추출
+    max_createdAt = df.loc[0, 'max_createdAt']  #DataFrame에서 value추출
     date_string = f"{max_createdAt}"
     date_obj = datetime.strptime(date_string, "%Y-%m-%d %H:%M:%S.%f")
 

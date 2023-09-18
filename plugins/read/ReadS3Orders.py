@@ -8,6 +8,7 @@ from pandas.core.frame import DataFrame
 from google.oauth2 import service_account
 from google.cloud import bigquery
 import pandas_gbq
+from information.ProjectInformation import S3_information
 
 
 def ReadS3OrdersData(fileName): #-> DataFrame:
@@ -17,13 +18,14 @@ def ReadS3OrdersData(fileName): #-> DataFrame:
     day = fileName.day
     hour = fileName.hour
 
-    s3 = boto3.client('s3',
-                      region_name="ap-northeast-2",
-                      aws_access_key_id="AKIA2EHO5GXPEW2W5S37",
-                      aws_secret_access_key="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",)
+    s3 = boto3.client(service_name = S3_information.service_name.value,
+                      region_name=S3_information.region_name.value,
+                      aws_access_key_id=S3_information.aws_access_key_id.value,
+                      aws_secret_access_key=S3_information.aws_secret_access_key.value)
     bucket = 'wingeatdata'
     obj = s3.get_object(Bucket=bucket, Key= f"practice/{year}-{month}-{day}-{hour}.csv")
     df = pd.read_csv(io.BytesIO(obj["Body"].read()))
+
     print("S3에서 파일을 읽었습니다.아래는 다운받은 데이터 입니다.")
 
     current_dir = os.path.dirname(__file__)
